@@ -1,2 +1,2 @@
-20203112 Daeun Lee
-Kookmin Univ. SW
+# 20203112 Daeun Lee
+# Kookmin Univ. SW
