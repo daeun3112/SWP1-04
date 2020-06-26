@@ -7,13 +7,13 @@ def application(environ, start_response):
     b = d.get('b', [''])[0]
     sum = 0 
     product = 0 
-    if a.isdigit() and b.isdigit():        
+    try:
         a, b = int(a), int(b)
         sum = a + b
         product = a * b
-    else:
-        sum = -1
-        product = -1 
+    except ValueError: 
+        sum = 500 
+        product = 500 
     response_body = html %{
         'sum': sum, 
         'product': product,   
